@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user/{username}',function ($username){
+	return view('get-param',['username'=>$username]);
+});
+
+
 
 /*
 |--------------------------------------------------------------------------
